@@ -391,3 +391,71 @@
   @keyframes evi-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes pulse-red { 0%, 100% { box-shadow: 4px 2px 0 var(--ink); } 50% { box-shadow: 4px 2px 0 var(--ink), 0 0 0 5px rgba(229,27,45,.12); } }
 }
+
+/* MOBILE HARDENING: Keep the personal zine rhythm, but remove horizontal overflow and make every
+   mobile action easy to tap. The red signal remains visible without crowding the phone viewport. */
+@media (max-width: 560px) {
+  html, body, #root { max-width: 100%; overflow-x: hidden; }
+  .evi-shell { width: 100%; overflow-x: clip; }
+  .evi-header, .evi-hero, .evi-about, .evi-notes, .evi-live, .evi-footer { width: calc(100% - 32px); }
+  .evi-header { gap: 12px; padding-bottom: 14px; }
+  .evi-brand { flex: 0 0 auto; min-width: 0; }
+  .evi-brand-name { white-space: nowrap; font-size: .88rem; }
+  .evi-nav { flex: 1 1 auto; justify-content: flex-end; gap: clamp(7px, 2.5vw, 12px); min-width: 0; font-size: clamp(.49rem, 2.1vw, .59rem); letter-spacing: .04em; }
+  .evi-nav a { white-space: nowrap; }
+  .evi-hero { padding-top: 58px; padding-bottom: 69px; }
+  .evi-hero-copy { padding-left: 0; }
+  .evi-kicker { font-size: .59rem; letter-spacing: .12em; }
+  .evi-hero h1 { max-width: 100%; font-size: clamp(3.85rem, 18.5vw, 5.9rem); }
+  .evi-hero-lede { max-width: 100%; margin: 25px 0 24px; font-size: .88rem; line-height: 1.58; }
+  .evi-hero-actions { width: 100%; max-width: 295px; gap: 8px; }
+  .evi-button { width: 100%; min-height: 48px; padding-inline: 16px; font-size: .69rem; }
+  .evi-hero-caption { gap: 7px; margin-top: 35px; font-size: .84rem; }
+  .evi-hero-caption .caption-stroke { width: 25px; }
+  .evi-hero-art { width: 100%; min-height: 422px; }
+  .hero-photo-frame { top: 28px; left: 14%; width: 72%; height: 370px; min-height: 0; }
+  .hero-target--back { top: 9%; left: 8%; width: 84vw; height: 84vw; }
+  .hero-target--front { top: 25%; left: 7%; width: 88px; height: 88px; }
+  .hero-target--front::before { left: -8px; width: 104px; }
+  .hero-target--front::after { top: -8px; height: 104px; }
+  .hero-tag--live { top: 7%; right: 0; padding: 7px 9px; font-size: .62rem; }
+  .hero-note { font-size: 1rem; }
+  .hero-note--top { left: 0; }
+  .hero-note--bottom { left: 13%; bottom: 1%; }
+  .evi-about { padding: 64px 0 118px; }
+  .evi-about-title { margin: 22px 0 30px; }
+  .evi-about-title h2 { font-size: clamp(3.55rem, 17vw, 4.6rem); }
+  .evi-about-copy { padding-left: 7px; font-size: .9rem; }
+  .evi-fact-note { right: 0; bottom: 18px; width: 105px; min-height: 105px; padding: 15px; }
+  .evi-fact-note strong { font-size: 2.2rem; }
+  .evi-notes { padding: 68px 0 80px; }
+  .evi-notes-heading { margin-bottom: 45px; }
+  .evi-notes-heading h2, .evi-live-copy h2 { font-size: clamp(3.7rem, 17vw, 4.8rem); }
+  .evi-notes-heading > p { max-width: 300px; margin-top: 20px; font-size: .88rem; }
+  .evi-entry-card, .entry-card--tall, .entry-card--offset { width: calc(100% - 10px); }
+  .evi-entry-card { margin-bottom: 60px; }
+  .entry-card--tall { margin-right: 10px; margin-left: auto; }
+  .entry-card--offset { margin-right: auto; margin-left: 10px; }
+  .entry-body { padding-top: 22px; }
+  .entry-body h3 { font-size: 1.82rem; }
+  .entry-body p { font-size: .84rem; }
+  .entry-like { width: 38px; height: 38px; }
+  .evi-live { min-height: 605px; padding: 94px 27px 72px; }
+  .evi-live-sticker { width: 98px; height: 98px; margin-bottom: 37px; }
+  .evi-live-copy p { font-size: .87rem; }
+  .evi-live-target { right: 9%; top: 8%; }
+  .evi-footer { padding-top: 67px; }
+  .evi-footer-brand span { font-size: 1.25rem; }
+  .evi-footer-top p { font-size: 1.25rem; }
+  .evi-footer-bottom { font-size: .57rem; }
+}
+
+@media (max-width: 350px) {
+  .evi-header { gap: 8px; }
+  .evi-brand-name { font-size: .78rem; }
+  .evi-nav { gap: 6px; font-size: .46rem; }
+  .evi-hero h1 { font-size: 3.7rem; }
+  .evi-hero-art { min-height: 390px; }
+  .hero-photo-frame { height: 340px; }
+  .evi-about-title h2, .evi-notes-heading h2, .evi-live-copy h2 { font-size: 3.35rem; }
+}
