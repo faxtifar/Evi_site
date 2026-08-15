@@ -8,9 +8,15 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 function Router() {
+  const pagesBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const homePath = pagesBase || "/";
+  const homePathWithSlash = pagesBase ? `${pagesBase}/` : "/";
+
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path={homePath} component={Home} />
+      <Route path={homePathWithSlash} component={Home} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
