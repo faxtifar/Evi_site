@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Evi signal mark">
+  <rect width="120" height="120" rx="8" fill="#171519"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#e51b2d" stroke-width="7"/>
+  <circle cx="60" cy="60" r="11" fill="none" stroke="#e51b2d" stroke-width="4"/>
+  <path d="M26 88 93 27" stroke="#fffaf4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 16v22M81 27h22" stroke="#e51b2d" stroke-width="3" stroke-linecap="round"/>
+</svg>
