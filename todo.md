@@ -9,3 +9,5 @@
 - [x] Собрать GitHub Pages-версию с base path `/Evi_site/` и корневыми статическими файлами.
 - [x] Запушить сборку в `faxtifar/Evi_site`; GitHub Pages пока не включён — API вернул 403, требуется включение в Settings → Pages.
 - [x] Сохранить финальное состояние коммитом `Create Evi personal red-signal website` в ветке `main`.
+- [x] Исправить маршрутизацию для базового пути `/Evi_site/`, чтобы прямая ссылка открывала главную страницу вместо 404.
+- [x] Пересобрать Pages-файлы, запушить исправление и проверить URL `https://faxtifar.github.io/Evi_site/`: HTTP 200, заголовок «Эви / сигнал — @ly9na6».
