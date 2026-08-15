@@ -20,6 +20,10 @@ const assets = {
   live: `${import.meta.env.BASE_URL}assets/evi-cover-live.webp`,
 };
 
+const currentFollowers = 731;
+const targetFollowers = 1000;
+const progressPercent = Math.round((currentFollowers / targetFollowers) * 1000) / 10;
+
 const entries = [
   {
     id: "fallout",
@@ -165,10 +169,30 @@ export default function Home() {
               <span>#эфир</span>
               <span>#сумка_223</span>
             </div>
+            <div className="evi-progress" aria-label={`Прогресс до ${targetFollowers} подписчиков`}>
+              <div className="evi-progress-head">
+                <span>цель / {targetFollowers}</span>
+                <strong>{currentFollowers} <small>/ {targetFollowers}</small></strong>
+              </div>
+              <div
+                className="evi-progress-track"
+                role="progressbar"
+                aria-valuemin={0}
+                aria-valuemax={targetFollowers}
+                aria-valuenow={currentFollowers}
+                aria-label={`${progressPercent}% до цели`}
+              >
+                <span style={{ width: `${progressPercent}%` }} />
+              </div>
+              <div className="evi-progress-foot">
+                <span>{progressPercent}% сигнала поймано</span>
+                <Target size={15} />
+              </div>
+            </div>
           </div>
           <div className="evi-fact-note">
             <span className="fact-label">сейчас</span>
-            <strong>731</strong>
+            <strong>{currentFollowers}</strong>
             <small>подписчик</small>
             <span className="fact-arrow">↗</span>
           </div>

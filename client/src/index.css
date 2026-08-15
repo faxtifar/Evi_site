@@ -459,3 +459,23 @@
   .hero-photo-frame { height: 340px; }
   .evi-about-title h2, .evi-notes-heading h2, .evi-live-copy h2 { font-size: 3.35rem; }
 }
+
+/* PROGRESS NOTE: This is Evi's red-signal goal marker, not a generic dashboard widget.
+   Keep the track tactile, the percentage handwritten, and the 731/1000 figure obvious. */
+.evi-progress { position: relative; max-width: 410px; margin-top: 31px; padding: 16px 16px 13px; border: 1px solid var(--ink); background: rgba(255,255,255,.38); transform: rotate(-1.2deg); }
+.evi-progress::before { position: absolute; top: -5px; left: 33px; width: 58px; height: 10px; background: rgba(229,27,45,.76); content: ""; transform: rotate(2deg); }
+.evi-progress-head, .evi-progress-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.evi-progress-head { color: var(--red-dark); font-size: .63rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.evi-progress-head strong { color: var(--ink); font-family: "Bricolage Grotesque", sans-serif; font-size: 1.58rem; letter-spacing: -.08em; line-height: .9; }
+.evi-progress-head small { color: var(--ink-soft); font-family: "DM Sans", sans-serif; font-size: .62rem; font-weight: 800; letter-spacing: 0; }
+.evi-progress-track { position: relative; height: 13px; margin: 14px 0 10px; overflow: hidden; border: 1px solid var(--ink); background: var(--cream-deep); }
+.evi-progress-track span { display: block; height: 100%; background: repeating-linear-gradient(-45deg, var(--red) 0 8px, var(--red-dark) 8px 12px); box-shadow: 3px 0 0 var(--ink); transition: width 650ms var(--ease-out); }
+.evi-progress-foot { color: var(--ink-soft); font-family: "Caveat", cursive; font-size: 1.03rem; }
+.evi-progress-foot svg { color: var(--red); transform: rotate(9deg); }
+
+@media (max-width: 560px) {
+  .evi-progress { max-width: 100%; margin-top: 27px; padding: 15px 13px 12px; }
+  .evi-progress-head strong { font-size: 1.42rem; }
+  .evi-progress-track { height: 12px; margin-top: 13px; }
+  .evi-progress-foot { font-size: .96rem; }
+}
