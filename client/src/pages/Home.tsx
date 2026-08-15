@@ -198,6 +198,110 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="evi-rules" id="rules" aria-labelledby="rules-title">
+          <div className="evi-section-number">03 / гайд и правила</div>
+          <div className="evi-rules-heading">
+            <h2 id="rules-title">
+              правила <span>канала</span>
+              <br />и важные гиды
+            </h2>
+            <p>Всё, что нужно знать перед тем, как залететь на эфир, добавить меня в друзья или заказать коллаб.</p>
+          </div>
+
+          <div className="evi-rules-grid">
+            <div className="evi-rule-card evi-rule-card--main">
+              <span className="rule-badge">01 / follow</span>
+              <h3>как зайти со мной в игру?</h3>
+              <p><strong>Я не принимаю в друзья, заходим через follow!</strong> Если играем на випке, я кидаю ссылочку сюда.</p>
+              <div className="rule-steps">
+                <span>1. Находите ник: <strong>SYMKA_223</strong></span>
+                <span>2. Листаете вниз → view in profile</span>
+                <span>3. Нажимаете три точки</span>
+                <span>4. Follow — и играем! 😊</span>
+              </div>
+              <p className="rule-subtext">На стриме есть задержка. Чтобы успевать заходить ко мне на сервак, заходите на 5 секунд раньше!</p>
+            </div>
+
+            <div className="evi-rule-card">
+              <span className="rule-badge">02 / что здесь будет</span>
+              <h3>формат канала</h3>
+              <ul className="rule-list">
+                <li>Розыгрыши</li>
+                <li>Оповещение о стримах</li>
+                <li>Игры со мной</li>
+                <li>Опросы и многое другое!</li>
+              </ul>
+              <div className="evi-tags rules-tags">
+                <span>#ВашиПодарочки</span>
+                <span>#розыгрыш</span>
+                <span>#НовоеВидео</span>
+                <span>#стрим</span>
+              </div>
+            </div>
+
+            <div className="evi-rule-card">
+              <span className="rule-badge">03 / соцсети</span>
+              <h3>где меня искать</h3>
+              <p className="rule-dest">TikTok: <strong>@ly9na6</strong></p>
+              <p className="rule-dest">Роблокс: <strong>SYMKA_223</strong></p>
+              <p className="rule-dest">Канал в Максе: <strong>lyn9a0</strong></p>
+              <p className="rule-warning">❗ Меня <strong>нету</strong> в Лайке!</p>
+            </div>
+
+            <div className="evi-rule-card">
+              <span className="rule-badge">04 / друзья</span>
+              <h3>почему закрыты друзья?</h3>
+              <p>Мой список друзей закрыт, в роблоксе тоже не принимаю в др. Я не ищу новых игровых друзей, чтобы никому не было обидно 🫶🏼</p>
+              <p className="rule-subtext">Наш лучший способ общения — эфиры и комментарии, там я читаю <strong>абсолютно всех</strong> 😚</p>
+            </div>
+
+            <div className="evi-rule-card">
+              <span className="rule-badge">05 / чат и баны</span>
+              <h3>правила порядка</h3>
+              <ul className="rule-rules-list">
+                <li><strong>Спам на эфирах:</strong> мут 1 минута. Три бана/мута — 1 час.</li>
+                <li><strong>Оскорбления и угрозы:</strong> бан навсегда.</li>
+                <li><strong>Спам в лс менеджерам:</strong> 3 одинаковых сообщения — мут 5 минут.</li>
+                <li><strong>Копирование образа/ники:</strong> бан неделя (статья 137 УК РФ).</li>
+              </ul>
+            </div>
+
+            <div className="evi-rule-card evi-rule-card--price">
+              <span className="rule-badge">06 / прайс и коллабы</span>
+              <h3>коллаборации и подарки</h3>
+              <p className="rule-subtext">На данный момент не делаю коллаборации бесплатно, прайс ниже (может меняться от актива). Годли можно несколько, только чтобы сумма совпадала.</p>
+              
+              <div className="price-groups">
+                <div className="price-group">
+                  <h4>🎁 Подарки</h4>
+                  <ul>
+                    <li>Годли от 30 валют</li>
+                    <li>25 звезд</li>
+                    <li>75 робуксов</li>
+                  </ul>
+                </div>
+                <div className="price-group">
+                  <h4>🤝 Коллабы</h4>
+                  <ul>
+                    <li>Годли от 40 валют</li>
+                    <li>50 звезд</li>
+                    <li>100 робуксов</li>
+                  </ul>
+                </div>
+                <div className="price-group">
+                  <h4>⭐ В бустер-полочке</h4>
+                  <ul>
+                    <li>Годли от 60 валют</li>
+                    <li>100 звезд</li>
+                    <li>150 робуксов</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="rule-contact">По вопросам: <strong>@its_petaly</strong> или <strong>@gfgdgdggde</strong> (менеджеры)</p>
+            </div>
+          </div>
+        </section>
+
         <section className="evi-notes" id="notes" aria-labelledby="notes-title">
           <div className="evi-notes-heading">
             <div>

@@ -479,3 +479,249 @@
   .evi-progress-track { height: 12px; margin-top: 13px; }
   .evi-progress-foot { font-size: .96rem; }
 }
+
+/* Rules section */
+.evi-rules {
+  padding: 5rem 0 7rem;
+  border-top: 1px solid var(--line);
+  position: relative;
+}
+
+.evi-rules-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  gap: 2rem;
+}
+
+.evi-rules-heading h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: .95;
+  font-weight: 800;
+  letter-spacing: -.06em;
+}
+
+.evi-rules-heading h2 span {
+  color: var(--red);
+  font-family: "Caveat", cursive;
+  font-size: 1.15em;
+  font-style: italic;
+  letter-spacing: -.02em;
+}
+
+.evi-rules-heading p {
+  max-width: 380px;
+  font-size: .95rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.evi-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.evi-rule-card {
+  background: var(--white);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 2.2rem 2rem;
+  box-shadow: 6px 6px 0 var(--ink);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.evi-rule-card--main {
+  grid-column: span 2;
+  background: #fff6f6;
+  border-color: var(--red);
+  box-shadow: 6px 6px 0 var(--red);
+}
+
+.evi-rule-card--price {
+  grid-column: span 3;
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+  box-shadow: 6px 6px 0 var(--red);
+}
+
+.evi-rule-card--price h3 {
+  color: var(--white);
+}
+
+.evi-rule-card--price .rule-badge {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.evi-rule-card--price .rule-subtext {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.rule-badge {
+  align-self: flex-start;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 900;
+  background: var(--ink);
+  color: var(--white);
+  padding: .3rem .8rem;
+  border-radius: 4px;
+}
+
+.evi-rule-card h3 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  color: var(--ink);
+  margin: 0;
+}
+
+.rule-steps {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background: var(--white);
+  border: 1px dashed rgba(229, 27, 45, .4);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-size: .92rem;
+  color: var(--ink);
+}
+
+.rule-subtext {
+  font-size: .88rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rule-list, .rule-rules-list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  font-size: .92rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.rule-rules-list li {
+  line-height: 1.45;
+}
+
+.rule-rules-list strong, .rule-steps strong {
+  color: var(--ink);
+}
+
+.rules-tags {
+  margin-top: .6rem;
+}
+
+.rule-dest {
+  font-size: .98rem;
+  padding: .45rem 0;
+  border-bottom: 1px dotted var(--line);
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.rule-dest strong {
+  color: var(--ink);
+}
+
+.rule-warning {
+  margin: .5rem 0 0;
+  font-weight: 800;
+  color: var(--red);
+  font-size: .92rem;
+}
+
+.price-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.price-group {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1.4rem;
+  border-radius: 10px;
+}
+
+.price-group h4 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 0.8rem;
+  color: #ff99a4;
+  letter-spacing: -.03em;
+}
+
+.price-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+  font-size: .92rem;
+  color: rgba(255, 255, 255, 0.85);
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.rule-contact {
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: .92rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+.rule-contact strong {
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .evi-rules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .evi-rule-card--main {
+    grid-column: span 2;
+  }
+  .evi-rule-card--price {
+    grid-column: span 2;
+  }
+  .price-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .evi-rules {
+    padding: 3rem 0 5rem;
+  }
+  .evi-rules-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .evi-rules-grid {
+    grid-template-columns: 1fr;
+  }
+  .evi-rule-card--main,
+  .evi-rule-card--price {
+    grid-column: span 1;
+  }
+}
